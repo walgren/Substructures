@@ -123,3 +123,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Additional file types to ignore (abaqus-generated files)
+*.dat
+*.dmp
+*.inp
+*.imp
+*.com
+*.msg
+*.SMABulk
+*.sim
+*.sup
+
