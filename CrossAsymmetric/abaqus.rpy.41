@@ -1,0 +1,519 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2018 replay file
+# Internal Version: 2017_11_07-11.21.41 127140
+# Run by sebastian.chirinos on Tue Sep 29 04:04:06 2020
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=79.6100006103516, 
+    height=120.269996643066)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+openMdb('CrossTest1.cae')
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossTest1.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+p = mdb.models['Model-1'].parts['Cross']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].view.setValues(nearPlane=5.92726, 
+    farPlane=5.95222, width=0.0329332, height=0.0182568, cameraPosition=(
+    0.000350746, 0.00152588, 5.93974), cameraTarget=(0.000350746, 0.00152588, 
+    0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['Thick13'].setValues(expression='0.2*SubWidth')
+s.parameters['CornerEdge'].setValues(expression='0.2*SubWidth')
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#* FeatureError: Regeneration failed
+p = mdb.models['Model-1'].parts['Cross']
+p.restore()
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2412, 
+    farPlane=31.267, width=0.0347719, height=0.0192761, cameraPosition=(
+    0.00699692, 0.00405584, 31.2541), cameraTarget=(0.00699692, 0.00405584, 0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['Thick13'].setValues(expression='0.2*SubWidth')
+s.parameters['CornerEdge'].setValues(expression='0.15*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2476, 
+    farPlane=31.2607, width=0.00543331, height=0.00301199, cameraPosition=(
+    0.00407392, 0.00481168, 31.2541), cameraTarget=(0.00407392, 0.00481168, 0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['CornerEdge'].setValues(expression='0.16*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2477, 
+    farPlane=31.2606, width=0.0044316, height=0.00245669, cameraPosition=(
+    0.00261427, -0.00176633, 31.2541), cameraTarget=(0.00261427, -0.00176633, 
+    0))
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+p = mdb.models['Model-1'].parts['Cross']
+p.seedPart(size=0.00031, deviationFactor=0.1, minSizeFactor=0.1)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.0290496, 
+    farPlane=0.0471607, width=0.0207812, height=0.0110371, 
+    viewOffsetX=0.00059816, viewOffsetY=-8.95717e-05)
+mdb.save()
+#: The model database has been saved to "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossTest1.cae".
+mdb.save()
+#: The model database has been saved to "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossTest1.cae".
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/CornerMeshIssue_CornerEdge16%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['CornerEdge'].setValues(expression='0.18*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].view.setValues(nearPlane=5.93133, 
+    farPlane=5.94815, width=0.017174, height=0.00952051, cameraPosition=(
+    0.000176826, 0.0007701, 5.93974), cameraTarget=(0.000176826, 0.0007701, 0))
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Failed to attach mesh to part geometry.
+#* FeatureError: Regeneration failed
+p = mdb.models['Model-1'].parts['Cross']
+p.backup()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.031114, 
+    farPlane=0.0450962, width=0.00777429, height=0.004129, 
+    viewOffsetX=-0.00125038, viewOffsetY=0.00260693)
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Shell planar-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Shell planar-1'], filter=COPLANAR_EDGES)
+s2.unsetPrimaryObject()
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2486, 
+    farPlane=31.2597, width=0.000217183, height=0.000120397, cameraPosition=(
+    -0.00221788, 0.00264042, 31.2541), cameraTarget=(-0.00221788, 0.00264042, 
+    0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.2*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2439, 
+    farPlane=31.2644, width=0.0248248, height=0.0137618, cameraPosition=(
+    -0.00240042, 0.00639966, 31.2541), cameraTarget=(-0.00240042, 0.00639966, 
+    0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.25*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2486, 
+    farPlane=31.2597, width=0.000225218, height=0.000124851, cameraPosition=(
+    -0.00260824, 0.00229541, 31.2541), cameraTarget=(-0.00260824, 0.00229541, 
+    0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.2*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2482, 
+    farPlane=31.26, width=0.00253018, height=0.00140263, cameraPosition=(
+    -0.00228864, 0.00254895, 31.2541), cameraTarget=(-0.00228864, 0.00254895, 
+    0))
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.0302032, 
+    farPlane=0.046007, width=0.0140687, height=0.007472, 
+    viewOffsetX=0.00158212, viewOffsetY=0.00180118)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/GeometryIssue_CornerEdge18%_InnerFillet25%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.032257, 
+    farPlane=0.0439532, width=0.00181072, height=0.000961691, 
+    viewOffsetX=-0.00198417, viewOffsetY=0.00198167)
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/GeometryIssue_CornerEdge18%_InnerFillet25%Zoom', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.0293465, 
+    farPlane=0.0468637, width=0.0190564, height=0.010121, 
+    viewOffsetX=0.00260208, viewOffsetY=0.000625649)
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+mdb.save()
+#: The model database has been saved to "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossTest1.cae".
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/MeshIssue_CornerEdge18%_InnerFillet20%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2443, 
+    farPlane=31.264, width=0.0256469, height=0.0142176, cameraPosition=(
+    -0.00240759, -0.000602396, 31.2541), cameraTarget=(-0.00240759, 
+    -0.000602396, 0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['CornerEdge'].setValues(expression='0.2*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2486, 
+    farPlane=31.2597, width=0.000232677, height=0.000128986, cameraPosition=(
+    -0.00193575, 0.00225879, 31.2541), cameraTarget=(-0.00193575, 0.00225879, 
+    0))
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.18*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=31.2485, 
+    farPlane=31.2597, width=0.000560445, height=0.000310687, cameraPosition=(
+    -0.00204307, 0.00230759, 31.2541), cameraTarget=(-0.00204307, 0.00230759, 
+    0))
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+p = mdb.models['Model-1'].parts['Cross']
+p.deleteMesh()
+p = mdb.models['Model-1'].parts['Cross']
+p.deleteSeeds()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    datumAxes=OFF, datumPlanes=OFF)
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/MaxSize_CornerEdge20%_InnerFillet18%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.02*SubWidth')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=29.5672, 
+    farPlane=32.9411, width=8.8014, height=4.87912, cameraPosition=(1.67091, 
+    2.36717, 31.2541), cameraTarget=(1.67091, 2.36717, 0))
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+p = mdb.models['Model-1'].parts['Cross']
+p.seedPart(size=0.00021, deviationFactor=0.1, minSizeFactor=0.1)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/InnerFilletIssue_CornerEdge20%_InnerFillet2%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.04*SubWidth')
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Mesh deleted in 8 regions due to geometry association failure.
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s1.redo()
+#* Nothing to redo.
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.03*SubWidth')
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Mesh deleted in 5 regions due to geometry association failure.
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.04*SubWidth')
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Mesh deleted in 4 regions due to geometry association failure.
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/Meshed_CornerEdge20%_InnerFillet4%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s1.unsetPrimaryObject()
+del mdb.models['Model-1'].sketches['__edit__']
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+session.viewports['Viewport: 1'].enableMultipleColors()
+session.viewports['Viewport: 1'].setColor(initialColor='#BDBDBD')
+cmap=session.viewports['Viewport: 1'].colorMappings['Section']
+session.viewports['Viewport: 1'].setColor(colorMapping=cmap)
+session.viewports['Viewport: 1'].disableMultipleColors()
+session.viewports['Viewport: 1'].enableMultipleColors()
+session.viewports['Viewport: 1'].setColor(initialColor='#BDBDBD')
+cmap = session.viewports['Viewport: 1'].colorMappings['Material']
+session.viewports['Viewport: 1'].setColor(colorMapping=cmap)
+session.viewports['Viewport: 1'].disableMultipleColors()
+session.viewports['Viewport: 1'].enableMultipleColors()
+session.viewports['Viewport: 1'].setColor(initialColor='#BDBDBD')
+cmap=session.viewports['Viewport: 1'].colorMappings['Section']
+session.viewports['Viewport: 1'].setColor(colorMapping=cmap)
+session.viewports['Viewport: 1'].disableMultipleColors()
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/SectionView_CornerEdge20%_InnerFillet4%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.175*SubWidth')
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/SectionView_CornerEdge20%_InnerFillet17_5%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['Thick13'].setValues(expression='0.05*SubWidth')
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Failed to attach mesh to part geometry.
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/SectionView_CornerEdge20%_InnerFillet17_5%_thick5%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.04*SubWidth')
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Failed to attach mesh to part geometry.
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/SectionView_CornerEdge20%_InnerFillet4%_thick5%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s1 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s1, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['Thick24'].setValues(expression='0.2*SubWidth')
+s.parameters['Thick13'].setValues(expression='0.2*SubWidth')
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s1)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Failed to attach mesh to part geometry.
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/SectionView_CornerEdge20%_InnerFillet4%_thick20%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+p = mdb.models['Model-1'].parts['Cross']
+s = p.features['Partition face-1'].sketch
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=s)
+s2 = mdb.models['Model-1'].sketches['__edit__']
+g, v, d, c = s2.geometry, s2.vertices, s2.dimensions, s2.constraints
+s2.setPrimaryObject(option=SUPERIMPOSE)
+p.projectReferencesOntoSketch(sketch=s2, 
+    upToFeature=p.features['Partition face-1'], filter=COPLANAR_EDGES)
+s=mdb.models['Model-1'].sketches['__edit__']
+s.parameters['fillet'].setValues(expression='0.175*SubWidth')
+s2.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Cross']
+p.features['Partition face-1'].setValues(sketch=s2)
+del mdb.models['Model-1'].sketches['__edit__']
+p = mdb.models['Model-1'].parts['Cross']
+p.regenerate()
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+session.printToFile(
+    fileName='C:/Users/sebastian.chirinos/O-REU/Presentations/092920/SectionView_CornerEdge20%_InnerFillet17_5%_thick20%', 
+    format=PNG, canvasObjects=(session.viewports['Viewport: 1'], ))
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+p = mdb.models['Model-1'].parts['Cross']
+p.generateMesh()
+mdb.save()
+#: The model database has been saved to "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossTest1.cae".

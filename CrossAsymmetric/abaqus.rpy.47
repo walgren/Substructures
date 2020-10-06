@@ -1,0 +1,2069 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2018 replay file
+# Internal Version: 2017_11_07-11.21.41 127140
+# Run by sebastian.chirinos on Tue Sep 29 05:27:52 2020
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.95, 0.95), width=139.84, 
+    height=94.24)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('CrossAsymmetric_Analysis_AttributeSpace.py', __main__.__dict__)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1416.53)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1477.4325)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1559.5588)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1667.5687)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1865.6627)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1931.3467)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2018.9774)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2136.5542)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2285.0703)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2356.6714)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2454.0515)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2586.4092)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2717.5117)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2797.4553)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2912.3638)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3062.0898)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1865.0315)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1930.7422)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2018.3091)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2135.5281)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2303.4167)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2376.6992)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2476.5735)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2606.3608)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2722.3242)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2804.8516)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2918.4775)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3066.2415)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3161.5488)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3258.3965)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3389.1094)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3557.4333)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2284.4656)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2355.1436)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2452.8325)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2585.8101)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2721.9165)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2805.3176)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2919.0474)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3066.6313)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3142.9717)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3239.8523)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3373.6797)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3543.2012)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3594.1445)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3709.6267)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3861.6255)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 4057.8379)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Failed to attach mesh to part geometry.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2718.3135)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2798.1611)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2910.5193)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3065.1335)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3163.53)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3259.6165)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3390.5549)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3558.7859)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3594.6812)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3706.9438)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 11 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 3862.418)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 4059.8867)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 4058.6492)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 9 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 4193.2383)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: Warning: Mesh deleted in 5 regions due to geometry association failure.
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 4375.4243)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: 23
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/O-REU/Cross Assembly/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       12
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 4603.7578)
+print 'RT script done'
+#: RT script done

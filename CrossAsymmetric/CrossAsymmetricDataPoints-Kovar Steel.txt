@@ -1,0 +1,8 @@
+ThickTR[Min:0.6 Max:0.6 Step:0.0]
+ThickTL[Min:0.6 Max:0.6 Step:0.0]
+ThickBL[Min:0.4 Max:0.6 Step:0.1]
+ThickBR[Min:0.4 Max:0.6 Step:0.1]
+Fillet[Min:2.5 Max:2.5 Step:0.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Material:	ThickTR:	ThickTL:	ThickBL:	ThickBR:	Fillet:	K_xy:	K_y:	K_theta:	mass:
+Kovar Steel	0.600	0.600	0.400	0.400	2.500	2485884160.000	2555005952.000	248837586944.000	632585.242
