@@ -129,10 +129,11 @@ dmypy.json
 *.dat
 *.dmp
 *.inp
-*.imp
+*.ipm
 *.com
 *.msg
 *.SMABulk
 *.sim
+*.sta
 *.sup
 
