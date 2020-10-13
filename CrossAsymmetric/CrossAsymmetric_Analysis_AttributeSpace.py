@@ -152,16 +152,23 @@ def meshCross(model,globalSeed):
 	return part 
 	
 	
-def retainBCs(model,dim):
+def retainBCs(modelData,dim):
 	'''
 	Create boundary conditions to specify retained DOFs on the part. 
 	
 	Parameters
 	----------
-	model : STR
-		Currently the model name (Baseline.cae). Should be updated to a dictionary
-		containing all relevant model info to eliminate all the hardcoded
-		part and model calls.
+	modelData : DICTIONARY
+		modelData = {
+			'modelName':modelName,
+			'partName':partName,
+			'stepName':stepName,
+			'retained_Nodes':retained_Nodes,
+			'retained_DOFs':retained_DOFs,
+			'modelName_Sub':'Substructure_Model
+			'stepName_Sub':'subGenerate'
+			'dim',dim}
+			(As of 7/14/2020)
 	dim : LIST
 		Overall dimensions of the part [minX,minY,minZ,maxX,maxY,maxZ]
 
@@ -171,67 +178,77 @@ def retainBCs(model,dim):
 		nothing currently. Could omit or pass back relevant information. Future
 		development would include error handling.
 	'''
-
+	modelName = modelData['modelName_Sub']
+	stepName = modelData['stepName_Sub']
+	partName = modelData['partName']
+	instanceName = partName+'-1'
 	# Top Face
-	a = mdb.models['Model-1'].rootAssembly
-	e1 = a.instances['Cross-1'].edges
+	a = mdb.models[modelName].rootAssembly
+	e1 = a.instances[instanceName].edges
 	edges1 = e1.getByBoundingBox(dim[0],0.99*dim[4],dim[2],dim[3],1.01*dim[4],dim[5])
 	a.Set(edges=edges1, name='Top')
 
 	# Bottom Face
-	a = mdb.models['Model-1'].rootAssembly
-	e1 = a.instances['Cross-1'].edges
+	a = mdb.models[modelName].rootAssembly
+	e1 = a.instances[instanceName].edges
 	edges1 = e1.getByBoundingBox(dim[0],1.01*dim[1],dim[2],dim[3],.99*dim[1],dim[5])
 	a.Set(edges=edges1, name='Bottom')
 	
 	#Left Face 
-	a = mdb.models['Model-1'].rootAssembly
-	e1 = a.instances['Cross-1'].edges
+	a = mdb.models[modelName].rootAssembly
+	e1 = a.instances[instanceName].edges
 	edges1 = e1.getByBoundingBox(1.01*dim[0],dim[1],dim[2],.99*dim[0],dim[4],dim[5])
 	a.Set(edges=edges1, name='Left')
 	
 	#Right Face
-	a = mdb.models['Model-1'].rootAssembly
-	e1 = a.instances['Cross-1'].edges
+	a = mdb.models[modelName].rootAssembly
+	e1 = a.instances[instanceName].edges
 	edges1 = e1.getByBoundingBox(.99*dim[3],dim[1],dim[2],1.01*dim[3],dim[4],dim[5])
 	a.Set(edges=edges1, name='Right')
 	
 	# Specify Retained Nodal BCs
-	a = mdb.models['Model-1'].rootAssembly
+	a = mdb.models[modelName].rootAssembly
 	region = a.sets['Bottom']
-	mdb.models['Model-1'].RetainedNodalDofsBC(name='BottomFix', createStepName='Step-1', 
+	mdb.models[modelName].RetainedNodalDofsBC(name='BottomFix', createStepName=stepName, 
 		region=region, u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
 
-	a = mdb.models['Model-1'].rootAssembly
+	a = mdb.models[modelName].rootAssembly
 	region = a.sets['Top']
-	mdb.models['Model-1'].RetainedNodalDofsBC(name='TopFix', createStepName='Step-1', 
+	mdb.models[modelName].RetainedNodalDofsBC(name='TopFix', createStepName=stepName, 
 		region=region, u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)	   
 		
-	a = mdb.models['Model-1'].rootAssembly
+	a = mdb.models[modelName].rootAssembly
 	region = a.sets['Left']
-	mdb.models['Model-1'].RetainedNodalDofsBC(name='LeftFix', createStepName='Step-1', 
+	mdb.models[modelName].RetainedNodalDofsBC(name='LeftFix', createStepName=stepName, 
 		region=region, u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
 
-	a = mdb.models['Model-1'].rootAssembly
+	a = mdb.models[modelName].rootAssembly
 	region = a.sets['Right']
-	mdb.models['Model-1'].RetainedNodalDofsBC(name='RightFix', createStepName='Step-1', 
+	mdb.models[modelName].RetainedNodalDofsBC(name='RightFix', createStepName=stepName, 
 		region=region, u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)	   
 	
 	
 	return part 
 
 
-def modifySub(model,i):
+def modifySub(modelData,i):
 	'''
 	Modify substructure identifier to create unique substructure for the 
 	current configuration. 
 	
 	Parameters
 	----------
-	model : STR
-		Currently the model name (Baseline.cae). Should be updated to a dictionary
-		containing all relevant model info to eliminate all the hardcoded
-		part and model calls.
+	modelData : DICTIONARY
+		modelData = {
+			'modelName':modelName,
+			'partName':partName,
+			'stepName':stepName,
+			'retained_Nodes':retained_Nodes,
+			'retained_DOFs':retained_DOFs,
+			'modelName_Sub':'Substructure_Model'
+			'stepName_Sub':'subGenerate'
+			'dim',dim}
+			(As of 7/14/2020)
 	i : INT
 		Substructure identifier (can be 1-9999)
 
@@ -241,10 +258,10 @@ def modifySub(model,i):
 		nothing currently. Could omit or pass back relevant information. Future
 		development would include error handling.
 	'''
-	# mdb.models['Model-1'].steps['Step-1'].setValues(substructureIdentifier=i)
 	modelName = modelData['modelName_Sub']
 	stepName = modelData['stepName_Sub']
 	mdb.models[modelName].steps[stepName].setValues(substructureIdentifier=i)
+	print('Sub ID: '+str(i))
 
 	return part 
 	
@@ -328,59 +345,6 @@ def takeScreenshot(model,innerR,thickness):
 		fileName=(path+'.png'), 
 		format=PNG, canvasObjects=(session.viewports['Viewport: 1'], )) 
 	return part 
-
-
-def drawSine(model,amplitude,frequency,length):
-	""" """
-	numberOfPoints = 200 
-
-	numPeaks=frequency/length
-	points = []
-	for i in range(numberOfPoints+1): 
-	   x = (i/float(numberOfPoints))*length
-	   y = (amplitude/2)*sin(x*numPeaks*2*pi) 
-	   points.append([y,x]) 
-	
-	m=mdb.models['Model-1']
-	s=m.ConstrainedSketch(name='Sine1',sheetSize=100.0)
-	g, v, d, c = s.geometry, s.vertices, s.dimensions, s.constraints
-	s.Spline(points=points)
-	mdb.models['Model-1'].ConstrainedSketch(name='SingleSpline', objectToCopy=s)
-	s.Line(point1=(0.0,10.0),point2=(0.0,15.0))
-	s.Line(point1=(0.0,0.0),point2=(0.0,-5.0))
-	
-	s.Line(point1=(thickness/2,15.0),point2=(-thickness/2,15.0))
-	s.Line(point1=(thickness/2,-5.0),point2=(-thickness/2,-5.0))
-	
-	
-	
-	s.offset(distance=thickness/2, objectList=(g.findAt((0.0, 2.5)), g.findAt((0.0, 12.5)), 
-		g.findAt((0.0, -2.5))), side=RIGHT)
-	s.offset(distance=thickness/2, objectList=(g.findAt((0.0, 2.5)), g.findAt((0.0, 12.5)), 
-		g.findAt((0.0, -2.5))), side=LEFT)
-	
-	s.delete(objectList=(g.findAt((0.0, 2.5)), g.findAt((0.0, -2.5)), g.findAt((
-		0.0, 12.5))))
-
-	return 
-
-	
-def partSine(model):
-
-	s1 = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
-		sheetSize=200.0)
-	g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
-	s1.setPrimaryObject(option=STANDALONE)
-	s1.sketchOptions.setValues(gridOrigin=(0.0, 5.0))
-
-	s1.retrieveSketch(sketch=mdb.models['Model-1'].sketches['Sine1'])
-
-	p = mdb.models['Model-1'].Part(name='Sine', dimensionality=THREE_D, 
-		type=DEFORMABLE_BODY)
-	p = mdb.models['Model-1'].parts['Sine']
-	p.BaseShell(sketch=s1)
-
-	return 
 
 
 def createAnalyticalSurface(model,dim):
@@ -581,7 +545,9 @@ def encastreBottom(model,dim):
 
 
 def xDisplacement(model,disp,subWidth):
-	'''Creates a displacement at the top reference point'''
+	'''Creates a displacement at the top reference point
+	   Uses disp * subWidth to get a normalized displacement
+	'''
 	
 	a1 = mdb.models['Model-1'].rootAssembly
 	r1 = a1.referencePoints
@@ -695,7 +661,123 @@ def postProcessingSets(model,dim):
 	a.Set(faces=faces1, name='ALL_PART')
 	
 	
-	return 
+	return
+	
+def substructureModel(modelData,i,matricesFile = 'MATRICES'):
+	'''
+	Creates a new model and performs a linear substructure generation step
+	on the instance defined in 'partName'. Input file is then modified to
+	output reduced stiffness matrix and substructure transformation matrix
+	to a .mtx file. Job is created and ran in parallel to other processes.
+	As of yet (5/21/2020), no issue has arisen in terms of computational
+	resources, as a single linear substructure case is fast to run.
+
+	Parameters
+	----------
+	modelData : DICTIONARY
+		modelData = {
+			'modelName':modelName,
+			'partName':partName,
+			'stepName':stepName,
+			'retained_Nodes':retained_Nodes,
+			'retained_DOFs':retained_DOFs,
+			'modelName_Sub':'Substructure_Model'
+			'dim',dim}
+			(As of 7/14/2020)
+	matrixFile: STR
+		optional parameter for the .mtx file to which Abaqus will write
+		the reduced stiffness and transformation matrices.
+	i : STR
+		Counter to track the current substructure identifier 
+
+	Returns
+	-------
+	None.
+
+	'''
+	# Data Unpackaging
+	modelName = modelData['modelName']
+	partName = modelData['partName']
+	stepName = modelData['stepName']
+	jobName = partName+'-'+str(i)
+
+	dim = modelData['dim']
+	modelName_Sub = 'Substructure_Model'
+	stepName_Sub = 'subGenerate'
+	modelData['modelName_Sub'] = modelName_Sub
+	modelData['stepName_Sub'] = stepName_Sub
+	# Makes a copy of current model and names it 'Substructure_Model'
+	mdb.Model(name=modelName_Sub, objectToCopy=mdb.models[modelName])
+
+	# Deletes step 1
+	a = mdb.models[modelName_Sub].rootAssembly
+	p = mdb.models[modelName_Sub].parts[partName]
+	del mdb.models[modelName_Sub].steps[stepName]
+	
+	# Makes 'subGenerate' step in copied model
+	mdb.models[modelName_Sub].SubstructureGenerateStep(name=stepName_Sub,
+		previous='Initial', substructureIdentifier=1)
+	 
+	modifySub(modelData,i)
+	a1 = mdb.models[modelName_Sub].rootAssembly
+	p = mdb.models[modelName_Sub].parts[partName]
+	instanceName = partName+'-1'
+	a1.Instance(name=instanceName, part=p, dependent=ON)
+	if "retained_Nodes" in modelData:
+		retained_Nodes = modelData['retained_Nodes'] # List of nodes on which the DOFs are retained
+		retained_DOFs = modelData['retained_DOFs'] # List of Lists DOF that correspond to each retained nodes
+		i = 0
+		for retained_Node in retained_Nodes:
+			a = mdb.models[modelName_Sub].rootAssembly
+			v1 = a.instances[instanceName].vertices
+			verts1 = v1[retained_Node:retained_Node+1]
+			BC_name = 'NODE_'+str(retained_Node)
+			region = a.Set(vertices=verts1,name=BC_name)
+			U = [OFF,OFF,OFF,OFF,OFF,OFF]
+			for retained_DOF in retained_DOFs[i]:
+				U[retained_DOF] = ON
+			mdb.models[modelName_Sub].RetainedNodalDofsBC(name=BC_name,
+				createStepName=stepName_Sub, region=region, u1=U[0], u2=U[1],
+				u3=U[2], ur1=U[3], ur2=U[4], ur3=U[5])
+			i+=1
+	else:
+		#Retained nodes not specified, retain all boundary nodes
+		print('here')
+		retainBCs(modelData=modelData,dim=dim)
+	#Create job, write input
+	mdb.Job(name=jobName, model=modelName_Sub,
+		description='', type=ANALYSIS, atTime=None, waitMinutes=0, waitHours=0,
+		queue=None, memory=90, memoryUnits=PERCENTAGE, getMemoryFromAnalysis=True,
+		explicitPrecision=SINGLE, nodalOutputPrecision=SINGLE, echoPrint=OFF,
+		modelPrint=OFF, contactPrint=OFF, historyPrint=OFF, userSubroutine='',
+		scratch='', resultsFormat=ODB, multiprocessingMode=DEFAULT, numCpus=1,
+		numGPUs=0)
+	mdb.jobs[jobName].writeInput(consistencyChecking=OFF)
+
+	#Modify input file with a substructure matrix generation (for non-linear use)
+	# string = '*SUBSTRUCTURE MATRIX OUTPUT, OUTPUT FILE=USER DEFINED,\
+	# FILE NAME = '+matricesFile+', RECOVERY MATRIX=YES, STIFFNESS=YES'
+
+	# fileName = jobName+'.inp'
+
+	# for line in fileinput.input(fileName,inplace=1):
+		# print line,
+		# if '*Damping Controls' in line:
+			# print string
+	# fileinput.close()
+
+	strCommandLine = 'abaqus job='+jobName+' ask_delete=OFF'
+	os.system(strCommandLine)	
+	
+	# To wait for completion before next loop iteration
+	return jobName
+
+def getSetSize(*args): 
+	n = 1
+	for arg in args:
+		n *= len(arg)
+	return n
+
 i=1
 	
 	
@@ -706,33 +788,40 @@ thick24set = np.arange(0.05,0.21,0.05)	# Max is about cornerSize to mesh (geomet
 filletSet = np.arange(0.04,0.18,0.045)				# For cornerSize=0.2, min=0.04, max = 0.18
 materials = np.array(['Titanium Alpha-Beta'])#'Aluminum 2219','Kovar Steel','Titanium Alpha-Beta'])
 
+nSubs = getSetSize(thick13set, thick24set, filletSet, materials)
+
 sectionSet = np.array(['StiffShell','FlexibleShell'])
 #materialRef = {materials[0]:'E=7e10 Pa\trho=2840 kg/m^3',materials[1]:'E=135e9 Pa\trho=8320 kg/m^3',materials[2]:'E=113e9 Pa\trho=4430 kg/m^3'}
 
 width = dim[3]-dim[0]
 
+
+# Note: While file being used is CrossAsymmetric.cae, code and cae file use "Cross" to reference part
+modelData = {
+	'modelName':'Model-1',
+	'partName':'Cross',
+	'stepName':'Step-1',
+	'dim':dim}
+
 counter = 1
-for material in materials:
-	dataPointsFile = 'CrossAsymmetricDataPoints'
-	plotPointsFile = 'CrossAsymmetricPlottingPoints'
-	mMisesPointsFile = 'CrossAsymmetricMaxMisesValues'
-	
-	fileDataName = dataPointsFile+'-'+" ".join(material.split())+'.csv'
-	filePlotName = plotPointsFile+'-'+" ".join(material.split())+'.csv'
-	fileMaxMisesName = mMisesPointsFile+'-'+" ".join(material.split())+'.csv'
+fileDataName = 'CrossAsymmetricDataPoints.csv'
 
+with open(fileDataName, 'wb') as csvfile:
+		nSubsHeader = '%s,%d\n' % ('No. of substructures',nSubs)
+		csvfile.write(nSubsHeader)	# Writes number of substructures generated for importSubstructure in Assembly code
 
-	with open(fileDataName, 'wb') as csvfile:
-		bounds = '%s,%s\n%s\n%s\n%s\n%s\n' % ('DV Bounds:','Units: SI (m)',
-		'Thick13[Min:'+str(thick13set[0]*width)+' Max:'+str(thick13set[-1]*width)+' Step:'+str((thick13set[-1]*width-thick13set[0]*width)/(thick13set.size-1))+']',
-		'Thick24[Min:'+str(thick24set[0]*width)+' Max:'+str(thick24set[-1]*width)+' Step:'+str((thick24set[-1]*width-thick24set[0]*width)/(thick24set.size-1))+']',
-		'Fillet[Min:'+str(filletSet[0]*width)+' Max:'+str(filletSet[-1]*width)+' Step:'+str((filletSet[-1]*width-filletSet[0]*width)/(filletSet.size-1))+']',
-		'CornerSize: '+str(cornerSize*width))
+		
+		bounds = '%s,%s\n%s,%f,%s,%f,%s,%f\n%s,%f,%s,%f,%s,%f\n%s,%f,%s,%f,%s,%f\n%s,%f\n' % ('DV Bounds:','Units: SI (m)',
+		'Thick13  Min:', thick13set[0]*width, ' Max:',thick13set[-1]*width, ' Step:',(thick13set[-1]*width-thick13set[0]*width)/(thick13set.size-1),
+		'Thick24  Min:', thick24set[0]*width, ' Max:',thick24set[-1]*width, ' Step:',(thick24set[-1]*width-thick24set[0]*width)/(thick24set.size-1),
+		'Fillet	 Min:', filletSet[0]*width, ' Max:',filletSet[-1]*width, ' Step:',(filletSet[-1]*width-filletSet[0]*width)/(filletSet.size-1),
+		'CornerSize: ', cornerSize*width)
 		csvfile.write(bounds)
 		headers = '%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n' % (
 		'Substructure','ID','Material','K_xy','K_y','K_theta','mass','maxMises1','maxMises2','maxMises3','Thick13','Thick24','Fillet')
-		csvfile.write(headers)			
-				
+		csvfile.write(headers)
+
+for material in materials:				
 	for thick13 in thick13set:
 		for thick24 in thick24set:
 			for fillet in filletSet:
@@ -745,6 +834,11 @@ for material in materials:
 
 				# force = analysisStep(model,dim,theta=theta,thickness = thickness )
 				meshCross(model=model, globalSeed=0.021*width) #Need to change maybe
+				#Run a substructure generation step in parallel 
+				subJobName = substructureModel(modelData,i=counter,matricesFile = 'MATRICES')
+				time.sleep(45)
+				# Counter increment moved here to potentially avoid substructure generation issues
+				counter += 1
 				#Change after this point
 				
 				createAnalyticalSurface(model=model,dim=dim)
@@ -779,14 +873,17 @@ for material in materials:
 				
 				# Query mass
 				mass = mdb.models['Model-1'].parts['Cross'].getMassProperties()['mass']
-					
+				
+				# Wait for substructure job to finish, hopefully will fix every other substructure generating
+				mdb.jobs[subJobName].waitForCompletion()
+				
 				with open(fileDataName, 'ab') as csvfile:
 					# Writing all relevant data to a CSV
 					txt = '%s,%i,%s,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f\n' % (
-					'Cross',counter,material,K_xy,K_y,K_theta,mass,maxMises1,maxMises2,maxMises3,thick13,thick24,fillet)
+					'CrossAsymmetric',counter,material,K_xy,K_y,K_theta,mass,maxMises1,maxMises2,maxMises3,thick13,thick24,fillet)
 					csvfile.write(txt)
 				
-				counter += 1
+				
 end = time.time()
 
-print("Runtime of the program is {end - start}")
+print("--- %s seconds ---" % (end - start))

@@ -1,0 +1,207 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2018 replay file
+# Internal Version: 2017_11_07-11.21.41 127140
+# Run by sebastian.chirinos on Tue Oct 13 11:36:11 2020
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.95, 0.95), width=139.84, 
+    height=94.24)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('CrossAsymmetric_Analysis_AttributeSpace.py', __main__.__dict__)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model "Substructure_Model" has been created.
+#: Sub ID: 1
+#: here
+#: 23
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1324.7618)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model "Substructure_Model" has been created.
+#: Sub ID: 2
+#: here
+#: 23
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 1448.3618)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model "Substructure_Model" has been created.
+#: Sub ID: 3
+#: here
+#: 23
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2189.0981)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model "Substructure_Model" has been created.
+#: Sub ID: 4
+#: here
+#: 23
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2339.7017)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model "Substructure_Model" has been created.
+#: Sub ID: 5
+#: here
+#: 23
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/Y_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/THETA_ROT.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1
+#: (0.0099999998, 2190.3359)
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model database "C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\CrossAsymmetric.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+#: The model "Substructure_Model" has been created.
+#: Sub ID: 6
+#: here
+#: 23
+#: Model: C:/Users/sebastian.chirinos/MEEN 491H/Substructures/CrossAsymmetric/X_DISP.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       11
+#: Number of Node Sets:          14
+#: Number of Steps:              1

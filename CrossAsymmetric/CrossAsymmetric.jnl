@@ -4360,3 +4360,18 @@ del mdb.models['Model-1'].sketches['__edit__']
 mdb.models['Model-1'].parts['Cross'].regenerate()
 mdb.models['Model-1'].parts['Cross'].generateMesh()
 # Save by sebastian.chirinos on 2020_10_01-11.41.04; build 2018 2017_11_07-11.21.41 127140
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].parts['Cross'].deleteMesh()
+# Save by sebastian.chirinos on 2020_10_13-03.05.59; build 2018 2017_11_07-11.21.41 127140

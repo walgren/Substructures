@@ -1,17 +1,16 @@
 <?xml version="1.0"?><msgwrapper><Started><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName><clientHost type="string">SMART25</clientHost><handle type="integer">0</handle></Started>
 <Warning><message type="string">SLAVE SURFACE ASSEMBLY_TOP_EDGE_CNS_ IS A NODE-BASED SURFACE USED WITH SURFACE TO SURFACE APPROACH.  IN ORDER TO OBTAIN IMPROVED STRESS ACCURACY WITH THIS APPROACH, AN ELEMENT-BASED SURFACE SHOULD BE USED INSTEAD.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName></Warning>
 <Warning><message type="string">FOR *TIE PAIR (ASSEMBLY_TOP_EDGE_CNS_-ASSEMBLY_SURFACE-1_RIGIDBODY), ADJUSTED NODES WITH VERY SMALL ADJUSTMENTS WERE NOT PRINTED. SPECIFY *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName></Warning>
-<Warning><message type="string">114 elements are distorted. Either the isoparametric angles are out of the suggested limits or the triangular or tetrahedral quality measure is bad. The elements have been identified in element set WarnElemDistorted.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName></Warning>
-<Odb_File><file type="string">C:\Users\sebastian.chirinos\O-REU\Cross Assembly\CrossAsymmetric\X_DISP.odb</file><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName></Odb_File>
+<Odb_File><file type="string">C:\Users\sebastian.chirinos\MEEN 491H\Substructures\CrossAsymmetric\X_DISP.odb</file><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName></Odb_File>
 <Completed><message type="string">Analysis phase complete</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">X_DISP</jobName></Completed>
-<Started><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName><clientHost type="string">SMART25</clientHost><handle type="integer">7148</handle></Started>
+<Started><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName><clientHost type="string">SMART25</clientHost><handle type="integer">2896</handle></Started>
 <Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></Step>
 <Odb_Frame><step type="integer">0</step><frame type="integer">0</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></Odb_Frame>
-<MEMORY_ESTIMATE><memory type="float">72</memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></MEMORY_ESTIMATE>
+<MEMORY_ESTIMATE><memory type="float">67</memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></MEMORY_ESTIMATE>
 <PHYSICAL_MEMORY><physical_memory type="float">16293</physical_memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></PHYSICAL_MEMORY>
-<MINIMUM_MEMORY><minimum_memory type="float">23</minimum_memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></MINIMUM_MEMORY>
+<MINIMUM_MEMORY><minimum_memory type="float">24</minimum_memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></MINIMUM_MEMORY>
 <Odb_Frame><step type="integer">0</step><frame type="integer">1</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></Odb_Frame>
 <Status><step type="integer">1</step><increment type="integer">1</increment><attempts type="integer">1</attempts><severe type="integer">0</severe><equilibrium type="integer">1</equilibrium><iterations type="integer">1</iterations><totalTime type="float">1</totalTime><stepTime type="float">1</stepTime><timeIncrement type="float">1</timeIncrement><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></Status>
 <End_Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></End_Step>
 <Completed><message type="string">Analysis phase complete</message><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">X_DISP</jobName></Completed>
-<JOB_COMPLETED><jobName type="string">X_DISP</jobName><time type="string">Tue Sep 29 05:19:28 2020</time></JOB_COMPLETED></msgwrapper>
+<JOB_COMPLETED><jobName type="string">X_DISP</jobName><time type="string">Tue Oct 13 03:37:04 2020</time></JOB_COMPLETED></msgwrapper>
