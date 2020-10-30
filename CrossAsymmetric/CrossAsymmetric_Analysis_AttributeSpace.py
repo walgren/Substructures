@@ -837,8 +837,7 @@ for material in materials:
 				#Run a substructure generation step in parallel 
 				subJobName = substructureModel(modelData,i=counter,matricesFile = 'MATRICES')
 				time.sleep(45)
-				# Counter increment moved here to potentially avoid substructure generation issues
-				counter += 1
+
 				#Change after this point
 				
 				createAnalyticalSurface(model=model,dim=dim)
@@ -882,7 +881,7 @@ for material in materials:
 					txt = '%s,%i,%s,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f\n' % (
 					'CrossAsymmetric',counter,material,K_xy,K_y,K_theta,mass,maxMises1,maxMises2,maxMises3,thick13,thick24,fillet)
 					csvfile.write(txt)
-				
+				counter += 1
 				
 end = time.time()
 

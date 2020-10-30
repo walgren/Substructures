@@ -1,0 +1,105 @@
+# Save by sebastian.chirinos on 2020_10_30-00.48.31; build 2018 2017_11_07-11.21.41 127140
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=
+    mdb.models['Model-1'].parts['twoArcs'].features['Partition face-1'].sketch)
+mdb.models['Model-1'].parts['twoArcs'].projectReferencesOntoSketch(filter=
+    COPLANAR_EDGES, sketch=mdb.models['Model-1'].sketches['__edit__'], 
+    upToFeature=
+    mdb.models['Model-1'].parts['twoArcs'].features['Partition face-1'])
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidWidth'].setValues(
+    expression='0.2*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidWidth'].setValues(
+    expression='0.05*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidWidth'].setValues(
+    expression='0.25*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.25))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidWidth'].setValues(
+    expression='0.21*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidWidth'].setValues(
+    expression='0.20*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidWidth'].setValues(
+    expression='0.05*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.2))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.1))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.24))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.26))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.30))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.26))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(-0.13))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(0.13))*SubWidth')
+mdb.models['Model-1'].sketches['__edit__'].parameters['MidDist'].setValues(
+    expression='(0.5+(0.26))*SubWidth')
+mdb.models['Model-1'].parts['twoArcs'].features['Partition face-1'].setValues(
+    sketch=mdb.models['Model-1'].sketches['__edit__'])
+del mdb.models['Model-1'].sketches['__edit__']
+mdb.models['Model-1'].parts['twoArcs'].regenerate()
+mdb.models['Model-1'].parts['twoArcs'].generateMesh()
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=
+    mdb.models['Model-1'].parts['twoArcs'].features['Partition face-1'].sketch)
+mdb.models['Model-1'].parts['twoArcs'].projectReferencesOntoSketch(filter=
+    COPLANAR_EDGES, sketch=mdb.models['Model-1'].sketches['__edit__'], 
+    upToFeature=
+    mdb.models['Model-1'].parts['twoArcs'].features['Partition face-1'])
+mdb.models['Model-1'].sketches['__edit__'].parameters['fillet'].setValues(
+    expression='0.18*SubWidth')
+mdb.models['Model-1'].parts['twoArcs'].features['Partition face-1'].setValues(
+    sketch=mdb.models['Model-1'].sketches['__edit__'])
+del mdb.models['Model-1'].sketches['__edit__']
+mdb.models['Model-1'].parts['twoArcs'].regenerate()
+del mdb.models['Model-1'].parts['twoArcs'].sets['Set-15']
+mdb.models['Model-1'].parts['twoArcs'].deleteSets(setNames=('Set-28', 'Set-16', 
+    'Set-17'))
+mdb.models['Model-1'].parts['twoArcs'].deleteSets(setNames=('Set-29', 'Set-25', 
+    'Set-24', 'Set-23', 'Set-22', 'Set-2', 'Set-1'))
+mdb.models['Model-1'].parts['twoArcs'].Set(faces=
+    mdb.models['Model-1'].parts['twoArcs'].faces.getSequenceFromMask(('[#14 ]', 
+    ), ), name='Set-1')
+mdb.models['Model-1'].parts['twoArcs'].Set(faces=
+    mdb.models['Model-1'].parts['twoArcs'].faces.getSequenceFromMask(('[#2b ]', 
+    ), ), name='Set-2')
+mdb.models['Model-1'].parts['twoArcs'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=
+    mdb.models['Model-1'].parts['twoArcs'].sets['Set-1'], sectionName=
+    'StiffShell', thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].parts['twoArcs'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=
+    mdb.models['Model-1'].parts['twoArcs'].sets['Set-2'], sectionName=
+    'FlexibleShell', thicknessAssignment=FROM_SECTION)
+# Save by sebastian.chirinos on 2020_10_30-01.41.03; build 2018 2017_11_07-11.21.41 127140
+# Save by sebastian.chirinos on 2020_10_30-01.41.07; build 2018 2017_11_07-11.21.41 127140
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].parts['twoArcs'].regenerate()
+# Save by sebastian.chirinos on 2020_10_30-01.41.59; build 2018 2017_11_07-11.21.41 127140
